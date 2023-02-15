@@ -1,0 +1,21 @@
+{
+  "screenNames": {
+    "InDevelopment": "В разработке",
+    "SignIn": "Вход",
+    "SignUp": "Регистрация",
+    "Home": "Домашний экран",
+    "Notes": "Записи",
+    "Profile": "Профиль",
+    "Showcase": "Демонстрация"
+  },
+  "inDevelopmentScreen": {
+    "description": "Этот экран в разработке. Спасибо за ваше терпение!"
+  },
+  "signInScreen": {
+    "title": "Добро пожаловать в шаблон React Native!",
+    "description": "Давайте посмотрим, как это работает"
+  },
+  "homeScreen": {
+    "localizedFeatureDescription": "В зависимости от настроек устройства, эта строка отображается на английском или русском языке"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "screenNames": {
+    "InDevelopment": "In Development",
+    "SignIn": "Sign In",
+    "SignUp": "Sign Up",
+    "Home": "Home",
+    "Notes": "Notes",
+    "Profile": "Profile",
+    "Showcase": "Showcase"
+  },
+  "inDevelopmentScreen": {
+    "description": "This screen is in development. Thanks for your patience!"
+  },
+  "signInScreen": {
+    "title": "Welcome to React Native Boilerplate!",
+    "description": "Let's see how it works"
+  },
+  "homeScreen": {
+    "localizedFeatureDescription": "Depending on the device settings, this string is displayed in English or Russian language"
+  }
+}

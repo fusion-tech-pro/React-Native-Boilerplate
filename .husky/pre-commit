@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+GREEN_COLOR='\033[0;32m'
+YELLOW_COLOR='\033[0;33m'
+NO_COLOR='\033[0m'
+
+echo "\n${YELLOW_COLOR}Executing pre-commit hook${NO_COLOR}\n"
+
+source ~/.nvm/nvm.sh
+
+npm run lint
+
+echo "${GREEN_COLOR}Pre-commit hook was SUCCESSFUL!${NO_COLOR}\n"

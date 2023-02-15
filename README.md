@@ -9,6 +9,7 @@
 | React Native      | v0.71   |
 | React             | v18     |
 | TypeScript        | v4      |
+| Flipper           | v0.179  |
 | React Navigation  | v6      |
 | Redux Toolkit     | v1.9    |
 | React Redux       | v8      |
@@ -35,7 +36,7 @@
 * Тост-сообщение через [Notifier](react-native-notifier)
 * Поддержка SVG компонентов ([React Native SVG](https://github.com/software-mansion/react-native-svg) и [React Native Svg Transformer](https://github.com/kristerkari/react-native-svg-transformer))
 * Поддержка Redux и Navigation плагинов для [Flipper](https://fbflipper.com/)
-* Axios дефолтные хедеры и интерсепторы
+* Дефолтные хедеры и интерсепторы для [axios](https://github.com/axios/axios)
 * Симуляция API через сторедж
 * ESLint
 * Husky
@@ -44,12 +45,12 @@
 
 * Склонируйте проект:
   ```
-  git clone
+  git clone https://github.com/fusion-tech-pro/react-native-boilerplate.git
   ```
 
 * Войдите в папку с проектом:
   ```
-  cd rn-template
+  cd react-native-boilerplate
   ```
 
 * Выполните установку модулей:
@@ -63,7 +64,7 @@
 
 * Выполните установку подов:
   ```
-  cd ios && pod install && cd ..
+  npx pod-install
   ```
 
 * Запустите приложение

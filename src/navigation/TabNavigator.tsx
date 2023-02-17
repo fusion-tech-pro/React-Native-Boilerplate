@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationProp } from '@react-navigation/native';
+import { NavigationProp, RouteProp } from '@react-navigation/native';
 
 import InDevelopment from 'src/screens/other/InDevelopment';
 import Home from 'src/screens/root/Home';
@@ -18,6 +18,9 @@ export type TabNavigatorParamList = {
 
 export type TabNavigationProp<T extends keyof TabNavigatorParamList> =
   NavigationProp<TabNavigatorParamList, T>;
+
+export type TabRouteProp<T extends keyof TabNavigatorParamList> =
+  RouteProp<TabNavigatorParamList, T>;
 
 const TabNavigator: FC = () => {
   const { Navigator, Screen } = createBottomTabNavigator<TabNavigatorParamList>();

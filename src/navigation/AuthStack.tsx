@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationProp } from '@react-navigation/native';
+import { NavigationProp, RouteProp } from '@react-navigation/native';
 
 import SignIn from 'src/screens/auth/SignIn';
 import SignUp from 'src/screens/auth/SignUp';
@@ -14,6 +14,9 @@ export type AuthStackParamList = {
 
 export type AuthStackNavigationProp<T extends keyof AuthStackParamList> =
   NavigationProp<AuthStackParamList, T>;
+
+export type AuthStackRouteProp<T extends keyof AuthStackParamList> =
+  RouteProp<AuthStackParamList, T>;
 
 const AuthStack: FC = () => {
   const { Navigator, Screen } = createStackNavigator();

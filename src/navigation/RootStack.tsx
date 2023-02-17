@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { NavigationProp } from '@react-navigation/native';
+import { NavigationProp, RouteProp } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Showcase from 'src/screens/root/Showcase';
@@ -12,6 +12,9 @@ export type RootStackParamList = {
 
 export type RootNavigationProp<T extends keyof RootStackParamList> =
   NavigationProp<RootStackParamList, T>;
+
+export type RootRouteProp<T extends keyof RootStackParamList> =
+  RouteProp<RootStackParamList, T>;
 
 const RootStack: FC = () => {
   const { Navigator, Screen } = createStackNavigator();

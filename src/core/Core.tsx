@@ -1,7 +1,7 @@
 import 'src/locale/i18n';
+import 'react-native-gesture-handler';
 
 import React, { FC } from 'react';
-import 'react-native-gesture-handler';
 
 import { initialWindowMetrics, SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';

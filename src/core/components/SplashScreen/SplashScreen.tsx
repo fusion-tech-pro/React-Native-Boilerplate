@@ -46,7 +46,7 @@ const SplashScreen: FC = () => {
 
     logoTranslateAnimation.value = withSequence(
       withTiming(-100),
-      withDelay(100, withTiming(device.height, { duration: 150 }))
+      withDelay(100, withTiming(device.height, { duration: 150 })),
     );
     containerOpacityAnimation.value = withDelay(400, withTiming(0, undefined, () => {
       runOnJS(hideSplashScreen)();

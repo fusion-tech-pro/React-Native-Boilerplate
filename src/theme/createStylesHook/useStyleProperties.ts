@@ -41,15 +41,15 @@ const useStyleProps = () => {
 
   const styleProps: StyleProps = useMemo(
     () => ({
+      screenWidth: width,
+      screenHeight: height,
+      safeAreaTopMargin,
+      safeAreaBottomMargin,
       colors: themeColors,
       defaultColors,
       fontFamily,
       fontSize,
       shadowStyle,
-      screenWidth: width,
-      screenHeight: height,
-      safeAreaTopMargin,
-      safeAreaBottomMargin,
       device,
       absoluteFill: StyleSheet.absoluteFillObject,
       hp,
@@ -58,7 +58,13 @@ const useStyleProps = () => {
       getLineHeight,
       getLetterSpacing,
     }),
-    [themeColors, width, height, safeAreaTopMargin, safeAreaBottomMargin],
+    [
+      width,
+      height,
+      safeAreaTopMargin,
+      safeAreaBottomMargin,
+      themeColors,
+    ],
   );
 
   return styleProps;

@@ -16,7 +16,6 @@ import {
   PressableProps,
   StyleProp,
   TextStyle,
-  ViewStyle,
 } from 'react-native';
 
 import { TxKeyPath } from 'src/locale';
@@ -31,7 +30,6 @@ export type ButtonProps = PressableProps & {
   variant?: 'contained' | 'outlined';
   title?: string;
   titleTx?: TxKeyPath;
-  style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
   Icon?: ReactNode;
 };

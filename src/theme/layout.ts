@@ -1,25 +1,23 @@
-import { hp, wp } from 'src/utils/responsive';
-
 import colors from './colors';
 
 export const hitSlop = {
   small: {
-    top: hp(10),
-    bottom: hp(10),
-    left: wp(10),
-    right: wp(10),
+    top: 10,
+    bottom: 10,
+    left: 10,
+    right: 10,
   },
   medium: {
-    top: hp(20),
-    bottom: hp(20),
-    left: wp(20),
-    right: wp(20),
+    top: 20,
+    bottom: 20,
+    left: 20,
+    right: 20,
   },
   large: {
-    top: hp(30),
-    bottom: hp(30),
-    left: wp(30),
-    right: wp(30),
+    top: 30,
+    bottom: 30,
+    left: 30,
+    right: 30,
   },
 };
 

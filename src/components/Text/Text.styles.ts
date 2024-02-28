@@ -3,17 +3,16 @@ import createStylesHook from 'src/theme/createStylesHook';
 const useComponentStyles = createStylesHook(({
   colors,
   fontFamily,
-  fontSize,
 }) => ({
   default: {
     color: colors.textDark,
     fontFamily: fontFamily.medium,
-    fontSize: fontSize[12],
+    fontSize: 16,
   },
 
   headerType: {
     fontFamily: fontFamily.semiBold,
-    fontSize: fontSize[18],
+    fontSize: 24,
   },
 
   inattentiveType: {

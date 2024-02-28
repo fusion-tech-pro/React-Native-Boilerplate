@@ -5,7 +5,6 @@ import StatusToast, { StatusToastProps } from 'src/core/components/StatusToast';
 
 import LOGS from 'src/constants/logs';
 import hapticFeedback from './hapticFeedback';
-import { hp } from './responsive';
 
 type ShowToastArgs = StatusToastProps & {
   duration?: number
@@ -28,7 +27,7 @@ const showMessage = ({
     } as StatusToastProps,
     Component: StatusToast,
     containerStyle: (translateY: Animated.Value) => ({
-      paddingTop: hp(32),
+      paddingTop: 32,
       alignItems: 'center',
       transform: [
         {

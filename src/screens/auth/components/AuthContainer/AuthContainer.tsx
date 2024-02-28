@@ -3,7 +3,6 @@ import React, { FC, PropsWithChildren, useMemo } from 'react';
 import { ScrollView, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
-import { hp, wp } from 'src/utils/responsive';
 import useTheme from 'src/hooks/useTheme';
 import useKeyboard from 'src/hooks/useKeyboard';
 
@@ -64,8 +63,8 @@ const AuthContainer: FC<PropsWithChildren<Props>> = ({
         <Animated.View style={styles.form}>
           <Animated.View>
             <Icon
-              width={wp(70)}
-              height={hp(70)}
+              width={80}
+              height={80}
               fill={colors.primary}
             />
           </Animated.View>

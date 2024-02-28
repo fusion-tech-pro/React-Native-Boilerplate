@@ -1,14 +1,12 @@
 import createStylesHook from 'src/theme/createStylesHook';
 
-const useComponentStyles = createStylesHook(({
-  hp,
-}) => ({
+const useComponentStyles = createStylesHook(() => ({
   label: {
-    marginTop: hp(16),
+    marginTop: 16,
   },
 
   button: {
-    marginTop: hp(8),
+    marginTop: 8,
   },
 }));
 

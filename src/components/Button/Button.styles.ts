@@ -4,17 +4,16 @@ const useComponentStyles = createStylesHook(({
   colors,
   fontFamily,
   absoluteFill,
-  hp,
 }) => ({
   button: {
-    height: hp(40),
+    height: 60,
     width: '100%',
 
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
 
-    borderRadius: hp(5),
+    borderRadius: 5,
     overflow: 'hidden',
   },
 

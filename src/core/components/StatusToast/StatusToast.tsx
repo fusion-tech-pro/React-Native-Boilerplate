@@ -1,7 +1,6 @@
 import React, { FC, useMemo } from 'react';
 import { View } from 'react-native';
 
-import { wp } from 'src/utils/responsive';
 import useTheme from 'src/hooks/useTheme';
 
 import Text from 'src/components/Text';
@@ -46,8 +45,8 @@ const StatusToast: FC<StatusToastProps> = (props) => {
       <View style={styles.iconContainer}>
         <Icon
           fill={colors.iconLight}
-          width={wp(20)}
-          height={wp(20)}
+          width={20}
+          height={20}
         />
       </View>
 

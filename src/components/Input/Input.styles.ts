@@ -2,10 +2,7 @@ import createStylesHook from 'src/theme/createStylesHook';
 
 const useComponentStyles = createStylesHook(({
   colors,
-  fontSize,
   fontFamily,
-  hp,
-  wp,
 }) => ({
   container: {
     width: '100%',
@@ -18,10 +15,10 @@ const useComponentStyles = createStylesHook(({
   },
 
   label: {
-    marginBottom: hp(4),
+    marginBottom: 4,
 
     fontFamily: fontFamily.semiBold,
-    fontSize: fontSize[12],
+    fontSize: 16,
     color: colors.textDark,
   },
 
@@ -30,7 +27,7 @@ const useComponentStyles = createStylesHook(({
   },
 
   inputContainer: {
-    height: hp(40),
+    height: 60,
     width: '100%',
 
     flexDirection: 'row',
@@ -38,7 +35,7 @@ const useComponentStyles = createStylesHook(({
     justifyContent: 'space-between',
 
     backgroundColor: colors.backgroundGrayLight,
-    borderRadius: hp(5),
+    borderRadius: 5,
     borderWidth: 1,
   },
 
@@ -46,16 +43,16 @@ const useComponentStyles = createStylesHook(({
     flex: 1,
     height: '100%',
 
-    paddingHorizontal: wp(16),
+    paddingHorizontal: 16,
 
     color: colors.textDark,
-    fontSize: fontSize[12],
+    fontSize: 16,
     fontFamily: fontFamily.medium,
   },
 
   error: {
     color: colors.danger,
-    fontSize: fontSize[10],
+    fontSize: 12,
   },
 }));
 

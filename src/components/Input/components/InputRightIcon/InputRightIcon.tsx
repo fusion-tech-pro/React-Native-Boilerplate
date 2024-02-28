@@ -3,12 +3,12 @@ import { SvgProps } from 'react-native-svg';
 
 import { View } from 'react-native';
 
+import typeChecker from 'src/utils/typeChecker';
+import useTheme from 'src/hooks/useTheme';
+
 import IconButton from 'src/components/IconButton';
 import VisibilityOnIcon from 'src/assets/icons/visibility-on.svg';
 import VisibilityOffIcon from 'src/assets/icons/visibility-off.svg';
-
-import typeChecker from 'src/utils/typeChecker';
-import useTheme from 'src/hooks/useTheme';
 
 import useComponentStyles from './InputRightIcon.styles';
 

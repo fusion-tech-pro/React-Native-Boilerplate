@@ -3,16 +3,15 @@ import createStylesHook from 'src/theme/createStylesHook';
 const useComponentStyles = createStylesHook(({
   colors,
   absoluteFill,
-  hp,
 }) => ({
   button: {
-    height: hp(30),
-    width: hp(30),
+    height: 30,
+    width: 30,
 
     justifyContent: 'center',
     alignItems: 'center',
 
-    borderRadius: hp(20),
+    borderRadius: 20,
     overflow: 'hidden',
   },
 

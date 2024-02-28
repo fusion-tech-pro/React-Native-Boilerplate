@@ -11,7 +11,6 @@ const useComponentStyles = createStylesHook(({
   safeAreaTopMargin,
   safeAreaBottomMargin,
   colors,
-  hp,
 }, {
   withSafeAreaTopPadding,
   withSafeAreaBottomPadding,
@@ -29,7 +28,7 @@ const useComponentStyles = createStylesHook(({
 
   content: {
     flex: 1,
-    paddingHorizontal: withHorizontalPadding ? hp(16) : undefined,
+    paddingHorizontal: withHorizontalPadding ? 16 : undefined,
   },
 }));
 

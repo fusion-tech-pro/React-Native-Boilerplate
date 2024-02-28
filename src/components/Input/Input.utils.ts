@@ -1,3 +1,0 @@
-export const getKeyboardTypeByInputType = (inputType) => {
-
-}

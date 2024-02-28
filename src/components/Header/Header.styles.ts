@@ -3,12 +3,11 @@ import createStylesHook from 'src/theme/createStylesHook';
 const useComponentStyles = createStylesHook(({
   safeAreaTopMargin,
   device,
-  hp,
 }) => ({
   container: {
-    height: hp(38) + safeAreaTopMargin,
+    height: 45 + safeAreaTopMargin,
 
-    paddingTop: safeAreaTopMargin || hp(8),
+    paddingTop: safeAreaTopMargin || 8,
 
     flexDirection: 'row',
     alignItems: 'center',
@@ -17,7 +16,7 @@ const useComponentStyles = createStylesHook(({
   leftContent: {
     flex: 1,
     justifyContent: 'center',
-    height: hp(30),
+    height: 30,
   },
 
   title: {
@@ -25,7 +24,7 @@ const useComponentStyles = createStylesHook(({
     textAlign: 'center',
     justifyContent: 'center',
 
-    lineHeight: device.isIOS ? undefined : hp(25),
+    lineHeight: device.isIOS ? undefined : 25,
   },
 
   rightContent: {

@@ -83,6 +83,7 @@ const SignIn: FC = () => {
               value={value}
               error={error?.message}
               nextInputRef={passwordRef}
+              containerStyle={styles.input}
               onChangeText={onChange}
               onBlur={onBlur}
             />
@@ -100,17 +101,16 @@ const SignIn: FC = () => {
               secureTextEntry
               label="Password"
               placeholder="Input your password here"
-              containerStyle={styles.passwordInput}
               value={value}
               error={error?.message}
               inputRef={passwordRef}
+              containerStyle={styles.input}
               onChangeText={onChange}
               onBlur={onBlur}
               onSubmit={onSignInPress}
             />
           )}
         />
-
       </AuthContainer>
     </Screen>
   );

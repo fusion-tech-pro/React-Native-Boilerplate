@@ -12,7 +12,6 @@ import { View } from 'react-native';
 
 import useTheme from 'src/hooks/useTheme';
 import device from 'src/constants/device';
-import { wp } from 'src/utils/responsive';
 import { sleep } from 'src/utils/common';
 import { TabNavigatorParamList } from 'src/navigation/TabNavigator';
 
@@ -44,20 +43,6 @@ const TabBar: FC<BottomTabBarProps> = ({
 
   useEffect(() => {
     animateTabChangeTransition();
-  }, [state.index]);
-
-  const indicatorAnimatedStyle = useAnimatedStyle(() => {
-    return {
-      left: withTiming(indicatorLeftPosition.value, { duration: TAB_INDICATOR_ANIMATION_DURATION }),
-      transform: [
-        {
-          scaleY: withSequence(
-            withTiming(0.3, { duration: TAB_INDICATOR_ANIMATION_DURATION / 2 }),
-            withTiming(1, { duration: TAB_INDICATOR_ANIMATION_DURATION / 2 }),
-          ),
-        },
-      ],
-    };
   }, [state.index]);
 
   const animateTabChangeTransition = async () => {
@@ -99,8 +84,6 @@ const TabBar: FC<BottomTabBarProps> = ({
 
   return (
     <View style={styles.container}>
-      <Animated.View style={[styles.indicator, indicatorAnimatedStyle]} />
-
       {state.routes.map((route, index) => {
         const { name, key } = route;
         const isPrepaired = index === prepairedTabIndex;
@@ -114,8 +97,8 @@ const TabBar: FC<BottomTabBarProps> = ({
             Icon={(
               <Icon
                 fill={isPrepaired ? colors.tabBarActiveTab : colors.tabBarInactiveTab}
-                width={wp(16)}
-                height={wp(16)}
+                width={24}
+                height={24}
               />
             )}
             onPress={() => onTabPress(route)}

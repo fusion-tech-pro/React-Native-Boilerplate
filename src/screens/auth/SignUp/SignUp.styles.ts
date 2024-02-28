@@ -1,8 +1,8 @@
 import createStylesHook from 'src/theme/createStylesHook';
 
-const useComponentStyles = createStylesHook(({ hp }) => ({
+const useComponentStyles = createStylesHook(() => ({
   passwordInput: {
-    marginTop: hp(8),
+    marginTop: 8,
   },
 }));
 

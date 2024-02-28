@@ -1,8 +1,6 @@
 import createStylesHook from 'src/theme/createStylesHook';
 
-const useComponentStyles = createStylesHook(({
-  fontSize,
-}) => ({
+const useComponentStyles = createStylesHook(() => ({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -16,7 +14,7 @@ const useComponentStyles = createStylesHook(({
   title: {
     marginRight: 8,
 
-    fontSize: fontSize[12],
+    fontSize: 12,
   },
 }));
 

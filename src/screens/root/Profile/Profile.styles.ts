@@ -1,8 +1,6 @@
 import createStylesHook from 'src/theme/createStylesHook';
 
-const useComponentStyles = createStylesHook(({
-  hp,
-}) => ({
+const useComponentStyles = createStylesHook(() => ({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -13,7 +11,7 @@ const useComponentStyles = createStylesHook(({
   },
 
   button: {
-    marginTop: hp(8),
+    marginTop: 8,
   },
 }));
 

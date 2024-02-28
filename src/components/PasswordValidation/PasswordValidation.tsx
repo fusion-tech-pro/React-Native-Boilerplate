@@ -9,7 +9,6 @@ import { View } from 'react-native';
 import Animated, { LightSpeedInLeft } from 'react-native-reanimated';
 
 import useTheme from 'src/hooks/useTheme';
-import { wp } from 'src/utils/responsive';
 
 import CircleCheckmarkIcon from 'src/assets/icons/circle-checkmark.svg';
 import Text from '../Text';
@@ -55,8 +54,8 @@ const PasswordValidation: FC<Props> = ({
         <View key={rule.key} style={styles.ruleContainer}>
           <CircleCheckmarkIcon
             fill={rule.checked ? colors.success : colors.disabled}
-            width={wp(12)}
-            height={wp(12)}
+            width={12}
+            height={12}
           />
 
           <Text

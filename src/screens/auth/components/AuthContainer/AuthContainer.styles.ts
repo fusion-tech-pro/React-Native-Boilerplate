@@ -4,8 +4,6 @@ const useComponentStyles = createStylesHook(({
   safeAreaTopMargin,
   colors,
   device,
-  hp,
-  wp,
 }) => ({
   container: {
     flex: 1,
@@ -19,11 +17,11 @@ const useComponentStyles = createStylesHook(({
   },
 
   scrollContent: {
-    paddingHorizontal: wp(16),
+    paddingHorizontal: 24,
   },
 
   scrollContentScrollable: {
-    paddingBottom: device.isIOS ? hp(200) : 0,
+    paddingBottom: device.isIOS ? 200 : 0,
   },
 
   form: {
@@ -39,15 +37,15 @@ const useComponentStyles = createStylesHook(({
 
   description: {
     textAlign: 'center',
-    marginTop: hp(8),
+    marginTop: 8,
   },
 
   submitButton: {
-    marginTop: hp(16),
+    marginTop: 16,
   },
 
   forgotPasswordText: {
-    marginTop: hp(12),
+    marginTop: 12,
   },
 }));
 

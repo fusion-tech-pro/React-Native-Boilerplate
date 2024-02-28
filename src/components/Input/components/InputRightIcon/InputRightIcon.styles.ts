@@ -1,10 +1,8 @@
 import createStylesHook from 'src/theme/createStylesHook';
 
-const useComponentStyles = createStylesHook(({
-  wp,
-}) => ({
+const useComponentStyles = createStylesHook(() => ({
   container: {
-    marginRight: wp(8),
+    marginRight: 8,
   },
 }));
 

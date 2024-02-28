@@ -28,7 +28,7 @@ export const lightColors = {
 
   iconDark: '#071013',
 
-  tabBarActiveTab: '#f4f5f5',
+  tabBarActiveTab: '#6B83CF',
   tabBarInactiveTab: '#071013',
 };
 
@@ -46,7 +46,7 @@ export const darkColors = {
 
   iconDark: '#ffffff',
 
-  tabBarActiveTab: '#071013',
+  tabBarActiveTab: '#71E2EF',
   tabBarInactiveTab: '#f4f5f5',
 };
 
